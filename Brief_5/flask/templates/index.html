@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction de note IMDb</title>
+</head>
+<body>
+    <h1>Prédiction de note IMDb pour un film</h1>
+    <form method="post" action="/">
+        {{ form.hidden_tag() }}</br>
+        {{ form.csrf_token }}</br>
+        {{ form.duration.label }} {{ form.duration }}</br>
+        {{ form.actor_1_fb_likes.label }} {{ form.actor_1_fb_likes }}</br>
+        {{ form.num_critic_for_reviews.label }} {{ form.num_critic_for_reviews }}</br>
+        {{ form.actor_3_fb_likes.label }} {{ form.actor_3_fb_likes }}</br>
+        {{ form.num_voted_users.label }} {{ form.num_voted_users }}</br>
+        {{ form.cast_total_fb_likes.label }} {{ form.cast_total_fb_likes }}</br>
+        {{ form.facenumber_in_poster.label }} {{ form.facenumber_in_poster }}</br>
+        {{ form.num_user_for_reviews.label }} {{ form.num_user_for_reviews }}</br>
+        {{ form.actor_2_fb_likes.label }} {{ form.actor_2_fb_likes }}</br>
+        {{ form.imdb_score.label }} {{ form.imdb_score }}</br>
+        {{ form.movie_fb_likes.label }} {{ form.movie_fb_likes }}</br>
+        {{ form.submit() }}</br>
+    </form>
+</body>
+</html>
+

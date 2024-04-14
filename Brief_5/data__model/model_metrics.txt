@@ -1,0 +1,1 @@
+Score R² pour l'ensemble de test : 0.21234651937381688
